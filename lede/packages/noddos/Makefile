@@ -15,14 +15,13 @@ PKG_MAINTAINER:=Steven Hessing <steven.hessing@gmail.com>
 
 PKG_SOURCE_VERSION:=master
 PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/noddos/noddos.git
+PKG_SOURCE_URL:=https://github.com/fumiama/noddos.git
 
 PKG_BUILD_DIR := $(BUILD_DIR)/$(PKG_NAME)-$(PKG_SOURCE_VERSION)
 
 CMAKE_INSTALL:=1
 include $(INCLUDE_DIR)/package.mk
 include $(INCLUDE_DIR)/cmake.mk
-CMAKE_OPTIONS += -DCMAKE_BUILD_TYPE=Debug
 
 define Package/noddos
 	SECTION:=net
